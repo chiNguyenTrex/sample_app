@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:session][:password])
       log_in @user
       remember_or_not @user
-      redirect_to @user
+      redirect_back_or @user
     else
       flash.now[:danger] = I18n.t "users.new.login_message"
       render :new

@@ -83,3 +83,17 @@ en:
       let_signup: "Sign up now!"
       login_message: "Invalid email/password combination"
       remember_me: "Remember me on this computer"
+      edit_title: "Edit user"
+      edit_header: "Update your profile"
+      edit_submit: "Save changes"
+      change_avatar: "Change"
+      update_success: "Profile updated"
+      filter_login: "Please log in."
+      user_no_found: "User does not exist."
+    all:
+      users_title: "All users"
+    admin:
+      delete_label: "Delete"
+      before_delete: "You sure?"
+      success_delete: "User deleted"
+      fail_delete: "Delete failed"
