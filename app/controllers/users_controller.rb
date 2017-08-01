@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def show
     return if @user
     flash[:danger] = I18n.t "users.new.no_user"
-    redirect_to signup_path
+    redirect_to root_url
   end
 
   def new
@@ -21,9 +21,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = I18n.t "users.new.welcome_new_user"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = I18n.t "users.account.active_account"
+      redirect_to root_url
     else
       render :new
     end
