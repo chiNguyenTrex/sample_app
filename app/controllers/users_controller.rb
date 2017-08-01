@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find_by(id: params[:id])
+    @user = User.find_by id: params[:id]
     return if @user
     flash[:danger] = I18n.t "users.new.no_user"
     redirect_to signup_path

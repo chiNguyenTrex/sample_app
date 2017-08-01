@@ -82,3 +82,4 @@ en:
       no_account: "Don't have an account?"
       let_signup: "Sign up now!"
       login_message: "Invalid email/password combination"
+      remember_me: "Remember me on this computer"
