@@ -43,6 +43,11 @@ en:
       footer_content: "Ruby on Rails Tutorial"
       footer_conj: "by"
       footer_author: "Michael Hartl"
+      account_title: "Account"
+      account_out: "Log out"
+      user_title: "Users"
+      user_profile: "Profile"
+      user_setting: "Settings"
   static_pages:
     home:
       home_title: "Home"
@@ -73,4 +78,7 @@ en:
       pre_error: "The form contains"
       welcome_new_user: "Welcome to the Twitter"
       no_user: "User does not exist. Please register an account"
-
+      login_title: "Log in"
+      no_account: "Don't have an account?"
+      let_signup: "Sign up now!"
+      login_message: "Invalid email/password combination"
