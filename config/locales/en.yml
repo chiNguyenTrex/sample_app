@@ -33,13 +33,25 @@ en:
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+      logo: "sample app"
+      menu_home: "Home"
+      menu_help: "Help"
+      menu_login: "Log in"
+      menu_about: "About"
+      menu_contact: "Contact"
+      menu_news: "News"
+      footer_content: "Ruby on Rails Tutorial"
+      footer_conj: "by"
+      footer_author: "Michael Hartl"
   static_pages:
     home:
       home_title: "Home"
-      home_header: "Sample App"
+      home_header: "Welcome to the Sample App"
       home_prepara: "This is the home page for the"
       home_link: "Ruby on Rails Tutorial"
       home_postpara: "sample application."
+      home_signup: "Sign up now!"
+      image_alt: "Rails logo"
     help:
       help_title: "Help"
       help_header: "Help"
@@ -51,4 +63,8 @@ en:
     about:
       about_title: "About"
       about_para: "This is the sample application for the tutorial."
+  users:
+    new:
+      new_title: "Sign up"
+      new_content: "This will be a signup page for new users."
 
