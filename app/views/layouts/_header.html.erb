@@ -13,9 +13,11 @@
               <%= t("layouts.application.account_title") %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to t("layouts.application.user_profile"), current_user %></li>
+              <li><%= link_to t("layouts.application.user_profile"),
+                current_user %></li>
               <li>
-                <%= link_to t("layouts.application.user_setting"), edit_user_path(current_user) %>
+                <%= link_to t("layouts.application.user_setting"),
+                  edit_user_path(current_user) %>
               </li>
               <li class="divider"></li>
               <li>

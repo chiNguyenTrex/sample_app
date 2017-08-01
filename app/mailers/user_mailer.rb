@@ -4,7 +4,8 @@ class UserMailer < ApplicationMailer
     mail to: user.email, subject: I18n.t("users.account.email_subject")
   end
 
-  def password_reset
-    # Will be fill up in chapter 12
+  def password_reset user
+    @user = user
+    mail to: user.email, subject: I18n.t("users.password.email_subject")
   end
 end
