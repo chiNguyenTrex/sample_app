@@ -67,4 +67,10 @@ en:
     new:
       new_title: "Sign up"
       new_content: "This will be a signup page for new users."
+      submit_value: "Create my account"
+      signup_confirm_label: "Confirmation"
+      plural_error: "error"
+      pre_error: "The form contains"
+      welcome_new_user: "Welcome to the Twitter"
+      no_user: "User does not exist. Please register an account"
 
