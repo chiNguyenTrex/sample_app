@@ -2,7 +2,7 @@ require "test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   def setup
-    @base_title = I18n.t("layouts.application.base_title")
+    @base_title = I18n.t "layouts.application.base_title"
   end
 
   test "should get home" do
