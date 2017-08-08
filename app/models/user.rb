@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  scope :get_all_user, ->{order("name")}
   attr_accessor :remember_token
 
   # Remember a user in the DB for use in persistent sessions
