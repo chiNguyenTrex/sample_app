@@ -97,3 +97,13 @@ en:
       before_delete: "You sure?"
       success_delete: "User deleted"
       fail_delete: "Delete failed"
+    account:
+      active_account: "Please check your email to activate your account."
+      email_subject: "Account activation"
+      success_activate: "Account activated!"
+      fail_activate: "Invalid activation link."
+      not_activated: "Account not activated. Check your email for the activated link."
+      email_header: "Sample App"
+      say_hi: "Hi"
+      email_content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate_link: "Activate"
