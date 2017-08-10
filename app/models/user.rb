@@ -1,5 +1,7 @@
 class User < ApplicationRecord
-  scope :get_all_user, ->{order("name")}
+  has_many :microposts, dependent: :destroy
+  scope :get_all_user, ->{order :name}
+  scope :feed, ->(id){Micropost.where("user_id = ?", id)}
 
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
