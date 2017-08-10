@@ -18,6 +18,13 @@
       <%= f.submit t("users.new.login_title"), class: "btn btn-primary" %>
     <% end %>
 
-    <p><%= t "users.new.no_account" %> <%= link_to t("users.new.let_signup"), signup_path %></p>
+    <p>
+      <%= t "users.new.no_account" %>
+      <%= link_to t("users.new.let_signup"), signup_path %>
+    </p>
+    <p>
+      <%= t "users.password.reset_title" %>
+      <%= link_to t("users.password.reset_link"), new_password_reset_path %>
+    </p>
   </div>
 </div>
