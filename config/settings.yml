@@ -1,2 +1,4 @@
 list_users:
   image_size: 50
+follow:
+  image_size: 30
