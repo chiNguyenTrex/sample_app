@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
+    return (@microposts = microposts_of_user) if @user
     flash[:danger] = I18n.t "users.new.no_user"
     redirect_to root_url
   end
@@ -64,5 +64,9 @@ class UsersController < ApplicationController
     return if @user
     flash[:danger] = I18n.t "users.new.user_no_found"
     redirect_to root_path
+  end
+
+  def microposts_of_user
+    @user.microposts.paginate page: params[:page]
   end
 end
