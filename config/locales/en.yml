@@ -108,3 +108,11 @@ en:
       less_size: "should be less than 5MB"
       max_size: "Maximum file size is 5MB. Please choose a smaller file."
       change: "change"
+  follows:
+    view:
+      following: "following"
+      follower: "follower"
+      follow: "Follow"
+      unfollow: "Unfollow"
+      following_title: "Following"
+      follower_title: "Followers"
